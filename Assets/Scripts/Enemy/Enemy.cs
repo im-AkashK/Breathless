@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour {
 		myRigidbody = GetComponent<Rigidbody2D> ();
 
 		turnTimer = 0;
-		timeTrigger = 3f;
+		
 		 
 	}
 
@@ -48,6 +48,12 @@ public class Enemy : MonoBehaviour {
 		if(other.tag == "Player"){
 			Instantiate (death, gameObject.transform.position, gameObject.transform.rotation);
 			Destroy (gameObject);
+		}
+
+		if(other.tag == "MainCollider")
+		{
+			turnAround();
+			turnTimer = 0;
 		}
 
 	}

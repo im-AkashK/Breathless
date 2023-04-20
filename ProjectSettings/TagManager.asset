@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Bubble
+  - MainCollider
+  - Plants
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - MainCollider
   - Water
   - UI
-  - 
-  - 
+  - Plants
+  - Player
   - 
   - 
   - 
